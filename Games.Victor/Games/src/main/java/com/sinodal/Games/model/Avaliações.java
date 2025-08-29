@@ -15,5 +15,4 @@ public class Avaliação {
     public String comentario;
 
 
-
 }
