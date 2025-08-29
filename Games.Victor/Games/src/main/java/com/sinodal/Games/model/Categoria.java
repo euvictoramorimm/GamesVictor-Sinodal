@@ -1,4 +1,4 @@
-package com.sinodal.Games.Model;
+package com.sinodal.Games.model;
 
 public class Categoria {
 

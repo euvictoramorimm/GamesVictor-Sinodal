@@ -1,4 +1,4 @@
-package com.sinodal.Games.Model;
+package com.sinodal.Games.model;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -10,20 +10,27 @@ import java.util.Date;
 @Getter
 @Setter
 
-public class Compra {
+public class Compras {
 
     //atributtes
     private String jogo;
     private String usuario;
     private Date dataCompra;
     public double valorCompra;
-    public String comentarioCompra;
 
-    public Comprar(String newName, String newEmail, String newPassword, RoleModel newRole) {
-        this.nameUser = newName;
-        this.email = newEmail;
-        this.password = newPassword;
-        this.role = newRole;
+    //method
+    public String gerarResumo() {
+        return "O usuário " + usuario + " comprou o jogo " + jogo + " em " + dataCompra +
+                " por R$" + valorCompra + ".";
+    }
+    
+    Compra minhaCompra = new Compra();
+    minhaCompra.setUsuario("Victor");
+    minhaCompra.setJogo("The Witcher 3");
+    minhaCompra.setValorCompra("89.90");
+    minhaCompra.setDataCompra(new Date());
 
+    String resumoDaCompra = minhaCompra.gerarResumo();
 
+    System.out.println(resumoDaCompra);
 }
