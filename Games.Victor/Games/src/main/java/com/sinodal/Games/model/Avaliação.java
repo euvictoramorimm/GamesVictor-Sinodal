@@ -9,15 +9,16 @@ import java.util.Date;
 public class Avaliação {
 
     //atributtes
-    private String usuario;
-    private String jogo;
-    private int nota;
-    private String comentario;
+    public String usuario;
+    public String jogo;
+    public int nota;
+    public String comentario;
 
     //method
     public String gerarResumo() {
-        return "O usuário " + usuario + " avaliou o jogo " + jogo + " com a nota " + nota +
-                " e comentou: " + comentario;
+        return ("O usuário " + usuario + " avaliou o jogo " + jogo + " com a nota " + nota +
+                " e comentou: " + comentario);
+
     }
 
     public static void main(String[] args) {
