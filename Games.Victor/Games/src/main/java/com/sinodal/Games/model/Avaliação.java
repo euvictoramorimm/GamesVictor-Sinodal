@@ -10,24 +10,14 @@ public class Avaliação {
 
     //atributtes
     public String usuario;
-    public String jogo;
+    public Jogo jogo;
     public int nota;
     public String comentario;
 
     //method
     public String gerarResumo() {
-        return ("O usuário " + usuario + " avaliou o jogo " + jogo + " com a nota " + nota +
-                " e comentou: " + comentario);
+        return ("O usuário " + this.usuario + " avaliou o jogo " + this.jogo + " com a nota " + this.nota +
+                " e comentou: " + this.comentario);
 
-    }
-
-    public static void main(String[] args) {
-        Avaliação minhaAvaliação = new Avaliação();
-        minhaAvaliação.setUsuario("Victor");
-        minhaAvaliação.setJogo("The Witcher 3");
-        minhaAvaliação.setNota(10);
-        minhaAvaliação.setComentario("Ótimo jogo, para quem gosta dos livros e de RPGs, vai amar!");
-
-        System.out.println(minhaAvaliação.gerarResumo());
     }
 }

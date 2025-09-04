@@ -5,20 +5,16 @@ public class Usuario {
 
     //attributes
     public String nameUsuario;
-    private boolean Orientacao;
-    private int Idade
+    private boolean orientacao;
+    public int idade;
+    private String endereço;
+    public boolean online;
+
+
 
     //methods
-    public void CalculaIdade (String NomeUsuario)
-    {
-        this.NameUsuario= NomeUsuario;
-
+    public.mostrarUsuario() {
+        return ("O nome é " + nameUsuario + ", tem " + idade + "anos.");
     }
-    public String returnName (String NomeUsuario)
-    {
-        this.NameUsuario= "Prof"+NomeUsuario;
-        System.out.println(this.NameUsuario);
-
-        return this.NameUsuario;
 }
 
