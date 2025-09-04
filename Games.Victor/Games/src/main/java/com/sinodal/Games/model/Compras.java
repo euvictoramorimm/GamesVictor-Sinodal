@@ -13,10 +13,11 @@ import java.util.Date;
 public class Compras {
 
     //atributtes
-    private String jogo;
-    private String usuario;
-    private Date dataCompra;
+    public String jogo;
+    public String usuario;
     public double valorCompra;
+    public Date dataCompra;
+
 
     //method
     public String gerarResumo() {
@@ -24,7 +25,7 @@ public class Compras {
                 " por R$" + valorCompra + ".";
     }
     
-    Compra minhaCompra = new Compra();
+    Compra minhaCompra = new Compras();
     minhaCompra.setUsuario("Victor");
     minhaCompra.setJogo("The Witcher 3");
     minhaCompra.setValorCompra("89.90");
