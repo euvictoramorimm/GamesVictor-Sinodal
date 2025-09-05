@@ -18,7 +18,6 @@ public class Compra {
     public double valorCompra;
     public Date dataCompra;
 
-
     //method
     public String gerarResumo() {
         return "O usuário " + this.usuario + " comprou o jogo " + this.jogo + " em " + this.dataCompra +

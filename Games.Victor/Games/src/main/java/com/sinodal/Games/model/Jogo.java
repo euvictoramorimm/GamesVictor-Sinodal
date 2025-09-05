@@ -7,14 +7,16 @@ public class Jogo {
     public String gameName;
     public String dataDeLancamento;
     public double preco;
-    public Categoria categoria;
     public boolean comprado;
 
     //methods
     public String entrarNoJogo() {
         if (this.comprado == true) {
             return ("Abrindo o jogo...")
+        }else {
+            return ("ERRO, o jogo não foi comprado.")
         }
+
     }
 
 }

@@ -9,7 +9,7 @@ import java.util.Date;
 public class Avaliação {
 
     //atributtes
-    public String usuario;
+    public Usuario usuario;
     public Jogo jogo;
     public int nota;
     public String comentario;

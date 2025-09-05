@@ -10,8 +10,6 @@ public class Usuario {
     private String endereço;
     public boolean online;
 
-
-
     //methods
     public.mostrarUsuario() {
         return ("O nome é " + nameUsuario + ", tem " + idade + "anos.");

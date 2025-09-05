@@ -4,7 +4,7 @@ public class Categoria {
 
     //atributtes
     public String nomeCategoria;
-    public String listaDeJogos;
+    public List<Jogo> jogo;
 
     //methods
     public String mostrarCategoria() {
