@@ -1,11 +1,5 @@
 package com.sinodal.Games.model;
 
-import lombok.Getter;
-import lombok.Setter;
-
-import java.util.Date;
-@Getter
-@Setter
 public class Avaliação {
 
     //atributtes
@@ -18,6 +12,7 @@ public class Avaliação {
     public String gerarResumo() {
         return ("O usuário " + this.usuario + " avaliou o jogo " + this.jogo + " com a nota " + this.nota +
                 " e comentou: " + this.comentario);
+
 
     }
 }
