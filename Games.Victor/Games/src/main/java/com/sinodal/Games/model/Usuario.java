@@ -25,6 +25,8 @@ public class Usuario {
     }
 
 
+
+
     //getters e setters
 
     private int getId() {
