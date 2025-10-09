@@ -14,5 +14,5 @@ public class CompraBuilder {
     public CompraBuilder comId(Long id) {
         this.id = id;
         return this;
-
     }
+}
